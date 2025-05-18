@@ -1,0 +1,28 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome against localhost",
+            "url": "file:///Users/annabell/Documents/Angel/AngelPortfolio.html",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome with Server",
+            "url": "http://localhost:8080/AngelPortfolio.html",
+            "webRoot": "${workspaceFolder}",
+            "sourceMaps": true,
+            "preLaunchTask": "Start HTTP Server"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome (Relative Path)",
+            "url": "file://${workspaceFolder}/AngelPortfolio.html",
+            "webRoot": "${workspaceFolder}"
+        }
+    ]
+}
